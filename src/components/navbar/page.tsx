@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="relative" key={menu}>
               <button
                 onClick={() => toggleDropdown(menu)}
-                className="hover:text-red-600 flex items-center space-x-1"
+                className="hover:text-gray-700 flex items-center space-x-1"
               >
                 <span>{menu}</span>
                 <ChevronDown className="w-4 h-4" />
@@ -58,15 +58,15 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <a href="#" className="hover:text-red-600">
+          <a href="#" className="hover:text-gray-600">
             BLOGS
           </a>
         </div>
 
         <div className="flex items-center space-x-4 text-white-800">
-          <Search className="w-5 h-5 cursor-pointer hover:text-red-600" />
-          <User className="w-5 h-5 cursor-pointer hover:text-red-600" />
-          <ShoppingCart className="w-5 h-5 cursor-pointer hover:text-red-600" />
+          <Search className="w-5 h-5 cursor-pointer hover:text-gray-600" />
+          <User className="w-5 h-5 cursor-pointer hover:text-gray-600" />
+          <ShoppingCart className="w-5 h-5 cursor-pointer hover:text-gray-600" />
         </div>
       </div>
     </nav>
