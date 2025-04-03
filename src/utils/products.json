@@ -1,0 +1,63 @@
+{
+  "best_sellers": [
+    {
+      "name": "MuscleTech NitroTech Whey Protein - 1.81 Kg (4 Lb), Milk Chocolate",
+      "price": 6089,
+      "rating": 4.7,
+      "image": "/assets/images/nitrotech.jpg"
+    },
+    {
+      "name": "Dymatize Elite 100% Whey Protein - 2.3 Kg (5 Lb), Rich Chocolate",
+      "price": 7000,
+      "rating": 4.6,
+      "image": "/assets/images/dymatize.jpg"
+    },
+
+    {
+      "name": "Nutrabay Gold 100% Whey Protein Concentrate - 1 Kg (2.2 Lb), Rich Chocolate Creme",
+      "price": 2299,
+      "rating": 4.3,
+      "image": "/assets/images/whey_img1.jpg"
+    },
+    {
+      "name": "Healthfarm ThPreX Pre-Workout Supplement - 250 gm (0.55 Lb), Rocket Candy",
+      "price": 1500,
+      "rating": 4.8,
+      "image": "/assets/images/pre-workout.jpg"
+    },
+    {
+      "name": "Nutrabay Gold BCAA 4:1:1 with Electrolytes - 250 gm (0.55 Lb), Berry Blast",
+      "price": 1800,
+      "rating": 4.3,
+      "image": "/assets/images/bcaa.jpg"
+    }
+  ],
+  "new_arrivals": [
+    {
+      "image": "/assets/images/weight_gainer.jpg",
+      "name": "Mythiness 100% WHEY-H20",
+      "price": 2000,
+      "rating": 4.5
+    },
+    {
+      "image": "/assets/images/ppp1.jpg",
+      "name": "Nutrabay Plant Protein Isolate",
+      "price": 6600,
+      "rating": 4.2
+    },
+    {
+      "image": "/assets/images/oats.jpg",
+
+      "name": "Alpino Oats",
+      "price": 229,
+      "rating": 3.9
+    },
+    {
+      "image": "/assets/images/superyou.jpg",
+
+      "name": "Superfou Coffee Protein Water",
+      "price": 600,
+      "rating": 4.1
+    }
+  ]
+}

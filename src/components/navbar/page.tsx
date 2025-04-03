@@ -3,29 +3,31 @@
 import { useState } from "react";
 import { ChevronDown, Search, ShoppingCart, User } from "lucide-react";
 import { Inter } from "next/font/google";
-import volt_logo from "../../assets/images/volt.png";
 import Image from "next/image";
+import volt_logo from "../../../public/assets/images/volt.png";
 
-// Load the Inter font with specific weights you need
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Include all weights you need
+  weight: ["400", "500", "600", "700"],
 });
 
-export default function Navbar() {
-  const [dropdownOpen, setDropdownOpen] = useState(null);
+export default function Navbar({
+  setCartOpen,
+}: {
+  setCartOpen: (open: boolean) => void;
+}) {
+  const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
 
-  const toggleDropdown = (menu: any) => {
+  const toggleDropdown = (menu: string) => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
 
   return (
     <nav
-      className={`bg-0A2463 shadow-md border-t-4 border-red-600 ${inter.className}`}
+      className={`bg-0A2463 shadow-md border-t-4 border-[#222222] ${inter.className}`}
     >
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          {/* <img src={volt_logo} alt="logo" /> */}
           <Image src={volt_logo} alt="logo" className="w-16" />
         </div>
 
@@ -66,7 +68,10 @@ export default function Navbar() {
         <div className="flex items-center space-x-4 text-white-800">
           <Search className="w-5 h-5 cursor-pointer hover:text-gray-600" />
           <User className="w-5 h-5 cursor-pointer hover:text-gray-600" />
-          <ShoppingCart className="w-5 h-5 cursor-pointer hover:text-gray-600" />
+          <ShoppingCart
+            className="w-5 h-5 cursor-pointer hover:text-gray-600"
+            onClick={() => setCartOpen(true)}
+          />
         </div>
       </div>
     </nav>
